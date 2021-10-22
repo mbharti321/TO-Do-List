@@ -48,7 +48,9 @@ app.get("/work", function (req, res) {
     res.render("list", options)
 });
 
-
+app.get("/about", function (req, res) {
+        res.render("about")
+});
 
 app.listen(3000, function () {
     console.log("Server Started!!\nListening to port: http://localhost:3000/")
