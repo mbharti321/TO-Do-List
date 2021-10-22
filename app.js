@@ -14,7 +14,8 @@ let newItems = ["buy food", "cook food", "eat", "sleep"];
 let workItems = [];
 app.get("/", function (req, res) {
 
-    let day = date();
+    // let day = date.getDate();
+    let day = date.getDay();
 
     res.render("list", {
         listTitle: day,
